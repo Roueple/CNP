@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Industri Perhotelan Indonesia 2025: Tren, Tantangan, dan Peran Kami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <base target="_blank">
+</head>
+
+<body>
+    <!-- Modern Collapsible Menu Button -->
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+    </button>
+
+    <!-- Overlay -->
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <!-- Modern Sliding Menu -->
+    <nav id="menuPanel" class="menu-panel">
+        <div class="menu-header">
+            <h3 class="serif menu-title">Daftar Isi</h3>
+            <button id="menuClose" class="menu-close" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="#hero" class="menu-link">
+                    <i class="fas fa-home menu-icon-item"></i>
+                    <span>Pembuka</span>
+                </a>
+            </li>
+            
+            <li class="menu-item has-submenu">
+                <div class="menu-link submenu-toggle">
+                    <i class="fas fa-exclamation-triangle menu-icon-item"></i>
+                    <span>1. Tantangan Utama</span>
+                    <i class="fas fa-chevron-down submenu-arrow"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#austerity" class="submenu-link">Kebijakan Austeritas</a></li>
+                    <li><a href="#financial" class="submenu-link">Krisis Finansial</a></li>
+                    <li><a href="#workforce" class="submenu-link">Tantangan Ketenagakerjaan</a></li>
+                    <li><a href="#sustainability" class="submenu-link">Isu Keberlanjutan</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu-item has-submenu">
+                <div class="menu-link submenu-toggle">
+                    <i class="fas fa-users menu-icon-item"></i>
+                    <span>2. Peran Kami</span>
+                    <i class="fas fa-chevron-down submenu-arrow"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#realestate" class="submenu-link">Kontribusi Umum</a></li>
+                    <li><a href="#audit" class="submenu-link">Peran Internal Audit</a></li>
+                    <li><a href="#fatx" class="submenu-link">Peran Finance, Accounting & Tax</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu-item has-submenu">
+                <div class="menu-link submenu-toggle">
+                    <i class="fas fa-chart-line menu-icon-item"></i>
+                    <span>3. Pasar dan Tren</span>
+                    <i class="fas fa-chevron-down submenu-arrow"></i>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#sustain-trend" class="submenu-link">Tren Keberlanjutan</a></li>
+                    <li><a href="#digital" class="submenu-link">Pengaruh Digital</a></li>
+                    <li><a href="#infrastructure" class="submenu-link">Infrastruktur</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu-item">
+                <a href="#examples" class="menu-link">
+                    <i class="fas fa-file-alt menu-icon-item"></i>
+                    <span>4. Contoh Nyata</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-gradient hero-pattern min-h-screen relative overflow-hidden">
+            <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+            <div class="relative z-10 container mx-auto px-4 sm:px-6 py-16">
+                <!-- Bento Grid Layout -->
+                <div class="grid grid-cols-12 gap-6 min-h-screen">
+                    <!-- Main Title Block -->
+                    <div class="col-span-12 lg:col-span-8 lg:row-span-2 flex flex-col justify-center">
+                        <div class="glass-effect rounded-3xl p-4 sm:p-6 md:p-12 backdrop-blur-sm">
+                            <h1 class="serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 break-words">
+                                <em class="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal mb-2 opacity-90">Industri Perhotelan Indonesia</em>
+                                <span class="bg-gradient-to-r from-yellow-200 to-orange-200 bg-clip-text text-transparent">2025: Paradoks Pemulihan</span>
+                            </h1>
+                            <p class="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl break-words">
+                                Di tengah bayang-bayang krisis, peluang baru terbentang luas. Sebuah analisis komprehensif tentang tantangan, tren, dan peran strategis kami dalam membentuk masa depan industri perhotelan Indonesia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics Block -->
+                    <div class="col-span-12 lg:col-span-4 lg:row-span-1">
+                        <div class="stat-card glass-effect rounded-2xl p-4 sm:p-6 backdrop-blur-sm h-full">
+                            <h3 class="serif text-lg sm:text-xl font-semibold text-gray-800 mb-4">Statistik Kritis</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-700 text-sm sm:text-base">Penurunan Pendapatan</span>
+                                    <span class="font-bold text-red-600 text-base sm:text-lg">40%+</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-700 text-sm sm:text-base">Hotel Siap Hadapi 2025</span>
+                                    <span class="font-bold text-orange-600 text-base sm:text-lg">17%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-gray-700 text-sm sm:text-base">Potensi Gagal Bayar</span>
+                                    <span class="font-bold text-red-600 text-base sm:text-lg">58%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Element -->
+                    <div class="col-span-12 lg:col-span-4 lg:row-span-1">
+                        <div class="glass-effect rounded-2xl p-4 sm:p-6 backdrop-blur-sm h-full flex items-center justify-center">
+                            <img src="https://kimi-web-img.moonshot.cn/img/dynamic-media-cdn.tripadvisor.com/8c9963624da2c12fbe50f8ee12d1105644f33663.jpg" alt="Pemandangan hotel di Bali dengan lingkungan hijau" class="w-full h-auto sm:h-48 object-cover rounded-lg opacity-80" referrerpolicy="no-referrer"/>
+                        </div>
+                    </div>
+
+                    <!-- Key Insight Block -->
+                    <div class="col-span-12 lg:col-span-6 lg:row-span-1">
+                        <div class="pull-quote glass-effect rounded-2xl p-4 sm:p-6 backdrop-blur-sm h-full">
+                            <blockquote class="serif text-base sm:text-lg italic text-gray-800 mb-4 break-words">
+                                "Ketidakpastian yang ditimbulkan oleh kebijakan austeritas telah mengubah sentimen pasar yang awalnya optimis di akhir tahun 2024 menjadi pesimistis di awal tahun 2025."
+                            </blockquote>
+                            <cite class="text-sm text-gray-600">— Survei PHRI &amp; Horwath HTL, Maret 2025</cite>
+                        </div>
+                    </div>
+
+                    <!-- Executive Summary -->
+                    <div class="col-span-12 lg:col-span-6 lg:row-span-1">
+                        <div class="glass-effect rounded-2xl p-4 sm:p-6 backdrop-blur-sm h-full">
+                            <h3 class="serif text-lg sm:text-xl font-semibold text-gray-800 mb-4">Ringkasan Eksekutif</h3>
+                            <p class="text-gray-700 text-sm sm:text-base leading-relaxed break-words">
+                                Pada November 2025, industri perhotelan Indonesia menghadapi krisis yang belum pernah terjadi sebelumnya. Kombinasi kebijakan austeritas pemerintah, krisis finansial, dan isu keberlanjutan menciptakan lingkungan operasional yang penuh tantangan, namun di dalam krisis ini terkandung peluang transformasi strategis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Sections -->
+        <div class="container mx-auto px-6 py-16 space-y-20">
+
+            <!-- Section 1: Challenges -->
+            <section id="challenges" class="space-y-12">
+                <header class="text-center space-y-4">
+                    <h2 class="serif text-4xl md:text-5xl font-bold text-gray-800">Tantangan Utama yang Dihadapi Industri Perhotelan</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                        Empat pilar tantangan yang menguji ketahanan sektor perhotelan Indonesia di era pasca-pandemi
+                    </p>
+                </header>
+
+                <!-- Challenge 1: Austerity Measures -->
+                <div id="austerity" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">1.1 Dampak Kebijakan Austeritas Pemerintah</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Kebijakan efisiensi anggaran yang diterapkan oleh pemerintah Indonesia sejak akhir tahun 2024, yang diperkuat melalui <strong>Instruksi Presiden (Inpres) Nomor 1 Tahun 2025</strong>, telah memberikan dampak yang sangat signifikan terhadap industri perhotelan, terutama pada segmen <a href="https://www.travelweekly-asia.com/Travel-News/Hotel-News/When-Jakarta-s-empty-rooms-mean-empty-pockets" class="citation-link" target="_blank">MICE (Meetings, Incentives, Conventions, and Exhibitions)</a>.
+                            </p>
+
+                            <div class="stat-card rounded-xl p-6">
+                                <h4 class="font-semibold text-gray-800 mb-3">Target Penghematan Pemerintah</h4>
+                                <div class="text-3xl font-bold text-red-600">Rp306,6 triliun</div>
+                                <p class="text-gray-600 mt-2">Dengan memangkas anggaran perjalanan dinas, seminar, dan pertemuan resmi</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <img src="https://kimi-web-img.moonshot.cn/img/previews.123rf.com/5b3935770c57a417ead8d841e864c4c1a1ef2b14.jpg" alt="Ruangan konferensi hotel yang kosong" class="w-full h-64 object-cover rounded-lg shadow-lg" referrerpolicy="no-referrer"/>
+
+                            <div class="pull-quote rounded-xl p-6">
+                                <p class="serif text-lg italic text-gray-800 mb-3">
+                                    "Segmen MICE dan permintaan terkait pemerintah secara historis menyumbang antara 5-7% dan 6-21% dari total bisnis hotel."
+                                </p>
+                                <cite class="text-sm text-gray-600">— Data Industri Perhotelan Indonesia</cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sub-sections -->
+                    <div class="space-y-8 mt-12">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-3">Penurunan Drastis Permintaan MICE</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Survei PHRI dan Horwath HTL menunjukkan <a href="https://www.hospitalitynet.org/news/4126728.html" class="citation-link" target="_blank">reservasi terkait MICE mengalami penurunan yang tajam</a>, mengganggu dinamika pasar secara keseluruhan.
+                                </p>
+                                <div class="text-2xl font-bold text-red-600">66,7%</div>
+                                <p class="text-sm text-gray-600">Hotel di Jakarta melaporkan penurunan signifikan pada segmen pemerintah</p>
+                            </div>
+
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-3">Dampak pada Hotel Menengah-Atas</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Hotel berkategori menengah hingga atas merupakan kelompok yang <a href="https://horwathhtl.com/publication/indonesia-the-impact-of-government-austerity-measures/" class="citation-link" target="_blank">paling terpukul oleh kebijakan austeritas</a>.
+                                </p>
+                                <div class="text-2xl font-bold text-orange-600">96,7%</div>
+                                <p class="text-sm text-gray-600">Hotel di Jakarta melaporkan tingkat hunian lebih rendah</p>
+                            </div>
+
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-3">Persaingan "Red Ocean"</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Menurunnya permintaan memicu <a href="https://www.hospitalitynet.org/news/4126728.html" class="citation-link" target="_blank">persaingan harga yang sangat ketat</a> di pasar.
+                                </p>
+                                <div class="text-2xl font-bold text-purple-600">40%+</div>
+                                <p class="text-sm text-gray-600">Penurunan pendapatan tahunan yang dialami beberapa hotel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 2: Financial Crisis -->
+                <div id="financial" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">1.2 Krisis Finansial dan Risiko Operasional</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="stat-card rounded-xl p-6">
+                                <h4 class="font-semibold text-gray-800 mb-3">Data PHRI &amp; Horwath HTL</h4>
+                                <div class="space-y-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Penurunan Pendapatan &gt;40%</span>
+                                        <span class="font-bold text-red-600 text-lg">30%+ Hotel</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Tidak Siap Hadapi 2025</span>
+                                        <span class="font-bold text-red-600 text-lg">83%</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Potensi Gagal Bayar</span>
+                                        <span class="font-bold text-red-600 text-lg">58%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                <a href="https://www.linkedin.com/pulse/crisis-jakartas-hospitality-industry-2025-government-hendy-dckcc" class="citation-link" target="_blank">Tekanan pada arus kas dan profitabilitas telah mencapai tingkat yang mengkhawatirkan</a>, mengharuskan para pemilik hotel untuk mengambil langkah-langkah drastis.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <img src="https://kimi-web-img.moonshot.cn/imagegen/20251104/021762252881945ea04a1f569f2c68838594c7fa0bbe1245fb890_0.jpeg" alt="Staf hotel sedang mengatur operasional di lobi hotel yang sepi" class="w-full h-64 object-cover rounded-lg shadow-lg" referrerpolicy="no-referrer"/>
+
+                            <div class="pull-quote rounded-xl p-6">
+                                <p class="serif text-lg italic text-gray-800 mb-3">
+                                    "90% bisnis perhotelan telah memberhentikan pekerja harian, sementara 36,7% telah memangkas staf permanen."
+                                </p>
+                                <cite class="text-sm text-gray-600">— Survei PHRI Jakarta</cite>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Crisis Impact Diagram -->
+                    <div class="mermaid-container" id="financial-crisis-diagram">
+                        <div class="mermaid-controls">
+                            <button class="mermaid-control-btn zoom-in" title="Perbesar">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="mermaid-control-btn zoom-out" title="Perkecil">
+                                <i class="fas fa-search-minus"></i>
+                            </button>
+                            <button class="mermaid-control-btn reset-zoom" title="Reset">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </button>
+                            <button class="mermaid-control-btn fullscreen" title="Tampilan Penuh">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="mermaid" id="financial-crisis-mermaid">
+                            graph TD
+                            A["Krisis Finansial"] --> B["Penurunan Pendapatan >40%"]
+                            A --> C["Ancaman PHK Massal"]
+                            A --> D["Risiko Default Pinjaman"]
+
+                            B --> E["30%+ Hotel Terdampak"]
+                            C --> F["88% Prediksi PHK"]
+                            D --> G["58% Potensi Gagal Bayar"]
+
+                            E --> H["Penutupan Hotel"]
+                            F --> H
+                            G --> I["Krisis Perbankan"]
+
+                            style A fill:#ff6b6b,stroke:#d63031,stroke-width:3px,color:#fff
+                            style B fill:#ff9e7d,stroke:#e17055,stroke-width:2px,color:#2d3436
+                            style C fill:#ff9e7d,stroke:#e17055,stroke-width:2px,color:#2d3436
+                            style D fill:#ff9e7d,stroke:#e17055,stroke-width:2px,color:#2d3436
+                            style E fill:#feca57,stroke:#fdcb6e,stroke-width:2px,color:#2d3436
+                            style F fill:#feca57,stroke:#fdcb6e,stroke-width:2px,color:#2d3436
+                            style G fill:#feca57,stroke:#fdcb6e,stroke-width:2px,color:#2d3436
+                            style H fill:#ff7675,stroke:#d63031,stroke-width:2px,color:#fff
+                            style I fill:#ff7675,stroke:#d63031,stroke-width:2px,color:#fff
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 3: Workforce -->
+                <div id="workforce" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">1.3 Tantangan Ketenagakerjaan dan Biaya Operasional</h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass-effect rounded-xl p-6">
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Kelangkaan Tenaga Kerja</h4>
+                            <p class="text-gray-700 mb-4">
+                                Meskipun ancaman PHK massal mengemuka, industri tetap menghadapi <a href="https://go.clearlyip.com/articles/pdfs/hospitality-labor-market-trends-2025.pdf" class="citation-link" target="_blank">kelangkaan tenaga kerja di posisi-posisi operasional</a> yang krusial.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-700">Housekeeping</span>
+                                    <span class="font-bold text-red-600">38%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-700">Resepsionis</span>
+                                    <span class="font-bold text-orange-600">26%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-700">Staf Dapur</span>
+                                    <span class="font-bold text-yellow-600">14%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-effect rounded-xl p-6">
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Kenaikan Biaya Operasional</h4>
+                            <p class="text-gray-700 mb-4">
+                                Biaya operasional hotel terus meningkat di tahun 2025. <a href="https://thehotelblueprint.com/2025-hospitality-workforce-trends-and-challenges/" class="citation-link" target="_blank">Upah industri perhotelan telah meningkat sebesar 15% sejak pandemi</a>.
+                            </p>
+                            <div class="stat-card rounded-lg p-4">
+                                <div class="text-2xl font-bold text-red-600">15%</div>
+                                <p class="text-sm text-gray-600">Kenaikan upah sejak pandemi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Challenge 4: Sustainability -->
+                <div id="sustainability" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">1.4 Isu Keberlanjutan dan Dampak Lingkungan</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="pull-quote rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-3">Fodor's "No List 2025"</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Pada November 2024, <a href="https://en.tempo.co/read/1943066/bali-tops-fodors-2025-no-list-due-to-overtourism" class="citation-link" target="_blank">Fodor's Travel menempatkan Bali sebagai destinasi utama yang sebaiknya dihindari</a> karena masalah <em>overtourism</em>.
+                                </p>
+                                <div class="text-2xl font-bold text-red-600">303.000 ton</div>
+                                <p class="text-sm text-gray-600">Limbah plastik dari 5,3 juta wisatawan tahun 2023</p>
+                            </div>
+
+                            <div class="stat-card rounded-xl p-6">
+                                <h4 class="font-semibold text-gray-800 mb-3">Tantangan Pengelolaan Sampah</h4>
+                                <p class="text-gray-700 mb-4">
+                                    <a href="https://en.tempo.co/read/2034488/foreign-tourists-expose-the-dark-side-of-bali-tourism" class="citation-link" target="_blank">Sistem pengelolaan limbah daerah kesulitan mengimbangi volume sampah</a> yang dihasilkan oleh industri pariwisata.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <img src="https://kimi-web-img.moonshot.cn/img/media.cnn.com/cc8920c8964efcc4ee74cc5c0e476cb3e982a10e.jpg" alt="Limbah plastik di pantai Bali" class="w-full h-64 object-cover rounded-lg shadow-lg" referrerpolicy="no-referrer"/>
+
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-lg font-semibold text-gray-800 mb-3">Infrastruktur Terbebani</h4>
+                                <p class="text-gray-700">
+                                    <a href="https://thebalisun.com/bali-kicks-back-over-listing-on-travel-no-list-for-2025/" class="citation-link" target="_blank">Infrastruktur di Bali, terutama di bagian selatan, mengalami tekanan berat</a> dengan masalah kemacetan, kekurangan air bersih, dan keterbatasan fasilitas umum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Our Role -->
+            <section id="role" class="space-y-12">
+                <header class="text-center space-y-4">
+                    <h2 class="serif text-4xl md:text-5xl font-bold text-gray-800">Peran Kami dalam Menghadapi Tantangan</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                        Kontribusi strategis perusahaan real estat dan fungsi internal audit dalam membantu industri perhotelan mengatasi tantangan kompleks
+                    </p>
+                </header>
+
+                <div id="realestate" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">2.1 Kontribusi Perusahaan Real Estat Secara Umum</h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="glass-effect rounded-xl p-6">
+                            <div class="text-green-600 mb-4">
+                                <i class="fas fa-leaf text-3xl"></i>
+                            </div>
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-3">Praktik Bangunan Hijau</h4>
+                            <p class="text-gray-700">
+                                Mendorong adopsi praktik bangunan hijau dan sertifikasi keberlanjutan seperti <strong>LEED</strong> dan <strong>Green Globe</strong> untuk properti-properti hotel.
+                            </p>
+                        </div>
+
+                        <div class="glass-effect rounded-xl p-6">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-handshake text-3xl"></i>
+                            </div>
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-3">Fasilitasi Investasi</h4>
+                            <p class="text-gray-700">
+                                Memfasilitasi investasi strategis dan kemitraan, membantu hotel-hotel yang kesulitan modal untuk mendapatkan pendanaan restrukturisasi.
+                            </p>
+                        </div>
+
+                        <div class="glass-effect rounded-xl p-6">
+                            <div class="text-purple-600 mb-4">
+                                <i class="fas fa-microchip text-3xl"></i>
+                            </div>
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-3">Inovasi Teknologi</h4>
+                            <p class="text-gray-700">
+                                Mendukung adopsi teknologi inovatif untuk meningkatkan efisiensi operasional, mengurangi biaya, dan meningkatkan pengalaman tamu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="audit" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">2.2 Kontribusi Spesifik: Peran Internal Audit</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="stat-card rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Mitigasi Risiko Finansial</h4>
+                                <p class="text-gray-700 mb-4">
+                                    <a href="https://www.linkedin.com/pulse/internal-audits-role-crisis-management-arturo-navarro-cpa-d2enc" class="citation-link" target="_blank">Fungsi Internal Audit sebagai penyangga kritis dalam mitigasi risiko finansial</a> dan manajemen krisis.
+                                </p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        Penilaian risiko proaktif
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        Analisis skenario krisis
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        Audit real-time selama krisis
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Pencegahan Fraud</h4>
+                                <p class="text-gray-700 mb-4">
+                                    <a href="https://pkcindia.com/blogs/internal-audit-of-hotel-industry/" class="citation-link" target="_blank">Mendeteksi dan mencegah fraud serta mengendalikan revenue leakage</a> yang sangat rentan dalam industri perhotelan.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">POS &amp; PMS Audit</span>
+                                        <i class="fas fa-shield-alt text-blue-500"></i>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Revenue Reconciliation</span>
+                                        <i class="fas fa-chart-line text-green-500"></i>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Kontrol Internal</span>
+                                        <i class="fas fa-cogs text-purple-500"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internal Audit Process Diagram -->
+                    <div class="mermaid-container" id="internal-audit-diagram">
+                        <div class="mermaid-controls">
+                            <button class="mermaid-control-btn zoom-in" title="Perbesar">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="mermaid-control-btn zoom-out" title="Perkecil">
+                                <i class="fas fa-search-minus"></i>
+                            </button>
+                            <button class="mermaid-control-btn reset-zoom" title="Reset">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </button>
+                            <button class="mermaid-control-btn fullscreen" title="Tampilan Penuh">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="mermaid" id="internal-audit-mermaid">
+                            graph LR
+                            A["Internal Audit Function"] --> B["Risk Assessment"]
+                            A --> C["Fraud Prevention"]
+                            A --> D["Process Efficiency"]
+
+                            B --> E["Financial Risk Mitigation"]
+                            B --> F["Crisis Management"]
+
+                            C --> G["Revenue Leakage Control"]
+                            C --> H["Compliance Audit"]
+
+                            D --> I["SOP Evaluation"]
+                            D --> J["Technology Integration"]
+
+                            E --> K["Hotel Resilience"]
+                            F --> K
+                            G --> K
+                            H --> K
+                            I --> K
+                            J --> K
+
+                            style A fill:#4ecdc4,stroke:#26a69a,stroke-width:3px,color:#fff
+                            style B fill:#95e1d3,stroke:#4ecdc4,stroke-width:2px,color:#2d3436
+                            style C fill:#95e1d3,stroke:#4ecdc4,stroke-width:2px,color:#2d3436
+                            style D fill:#95e1d3,stroke:#4ecdc4,stroke-width:2px,color:#2d3436
+                            style E fill:#f9ca24,stroke:#f0932b,stroke-width:2px,color:#2d3436
+                            style F fill:#f9ca24,stroke:#f0932b,stroke-width:2px,color:#2d3436
+                            style G fill:#f9ca24,stroke:#f0932b,stroke-width:2px,color:#2d3436
+                            style H fill:#f9ca24,stroke:#f0932b,stroke-width:2px,color:#2d3436
+                            style I fill:#f9ca24,stroke:#f0932b,stroke-width:2px,color:#2d3436
+                            style J fill:#f9ca24,stroke:#f0932b,stroke-width:2px,color:#2d3436
+                            style K fill:#6c5ce7,stroke:#5f3dc4,stroke-width:3px,color:#fff
+                        </div>
+                    </div>
+
+                    <div class="pull-quote rounded-xl p-6">
+                        <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Peningkatan Efisiensi dan Pemenuhan Regulasi</h4>
+                        <p class="text-gray-700 mb-4">
+                            <a href="https://pkcindia.com/blogs/internal-audit-of-hotel-industry/" class="citation-link" target="_blank">Internal Audit memainkan peran penting dalam meningkatkan efisiensi proses</a> dan memastikan pemenuhan regulasi dalam industri perhotelan.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-2">Evaluasi SOP</h5>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Front office operations</li>
+                                    <li>• F&amp;B operations</li>
+                                    <li>• Housekeeping</li>
+                                    <li>• Manajemen persediaan</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-2">Kepatuhan Regulasi</h5>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Peraturan perpajakan</li>
+                                    <li>• Ketenagakerjaan</li>
+                                    <li>• Keselamatan dan keamanan</li>
+                                    <li>• Standar industri</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW SECTION: FATX -->
+                <div id="fatx" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">2.3 Kontribusi Spesifik: Peran Finance, Accounting &amp; Tax (FATX)</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="stat-card rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Manajemen Keuangan Strategis</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Departemen FATX memainkan peran krusial dalam mengelola kesehatan finansial hotel melalui perencanaan dan analisis yang komprehensif.
+                                </p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        Forecasting dan budgeting
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        Cash flow management
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        Financial reporting & analysis
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Optimalisasi Perpajakan</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Memastikan kepatuhan pajak sambil mengoptimalkan beban pajak melalui strategi perpajakan yang efektif dan legal.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Tax Compliance</span>
+                                        <i class="fas fa-file-invoice-dollar text-blue-500"></i>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Tax Planning</span>
+                                        <i class="fas fa-calculator text-green-500"></i>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Transfer Pricing</span>
+                                        <i class="fas fa-exchange-alt text-purple-500"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FATX Process Diagram -->
+                    <div class="mermaid-container" id="fatx-diagram">
+                        <div class="mermaid-controls">
+                            <button class="mermaid-control-btn zoom-in" title="Perbesar">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                            <button class="mermaid-control-btn zoom-out" title="Perkecil">
+                                <i class="fas fa-search-minus"></i>
+                            </button>
+                            <button class="mermaid-control-btn reset-zoom" title="Reset">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </button>
+                            <button class="mermaid-control-btn fullscreen" title="Tampilan Penuh">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="mermaid" id="fatx-mermaid">
+                            graph LR
+                            A["FATX Function"] --> B["Financial Management"]
+                            A --> C["Accounting Operations"]
+                            A --> D["Tax Optimization"]
+
+                            B --> E["Budgeting & Forecasting"]
+                            B --> F["Cash Flow Management"]
+
+                            C --> G["Financial Reporting"]
+                            C --> H["Cost Control"]
+
+                            D --> I["Tax Compliance"]
+                            D --> J["Tax Planning"]
+
+                            E --> K["Hotel Financial Health"]
+                            F --> K
+                            G --> K
+                            H --> K
+                            I --> K
+                            J --> K
+
+                            style A fill:#f39c12,stroke:#d68910,stroke-width:3px,color:#fff
+                            style B fill:#f8c471,stroke:#f39c12,stroke-width:2px,color:#2d3436
+                            style C fill:#f8c471,stroke:#f39c12,stroke-width:2px,color:#2d3436
+                            style D fill:#f8c471,stroke:#f39c12,stroke-width:2px,color:#2d3436
+                            style E fill:#85c1e9,stroke:#5dade2,stroke-width:2px,color:#2d3436
+                            style F fill:#85c1e9,stroke:#5dade2,stroke-width:2px,color:#2d3436
+                            style G fill:#85c1e9,stroke:#5dade2,stroke-width:2px,color:#2d3436
+                            style H fill:#85c1e9,stroke:#5dade2,stroke-width:2px,color:#2d3436
+                            style I fill:#85c1e9,stroke:#5dade2,stroke-width:2px,color:#2d3436
+                            style J fill:#85c1e9,stroke:#5dade2,stroke-width:2px,color:#2d3436
+                            style K fill:#27ae60,stroke:#1e8449,stroke-width:3px,color:#fff
+                        </div>
+                    </div>
+
+                    <div class="pull-quote rounded-xl p-6">
+                        <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Akuntansi &amp; Kontrol Biaya</h4>
+                        <p class="text-gray-700 mb-4">
+                            FATX berperan vital dalam menjaga akurasi pencatatan keuangan dan mengoptimalkan struktur biaya operasional hotel.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-2">Pelaporan Keuangan</h5>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Laporan laba rugi</li>
+                                    <li>• Neraca keuangan</li>
+                                    <li>• Analisis variance</li>
+                                    <li>• KPI monitoring</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-semibold text-gray-800 mb-2">Kontrol Biaya</h5>
+                                <ul class="text-sm text-gray-700 space-y-1">
+                                    <li>• Cost per occupied room (CPOR)</li>
+                                    <li>• Food & beverage cost control</li>
+                                    <li>• Labor cost optimization</li>
+                                    <li>• Vendor negotiation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Market Trends -->
+            <section id="trends" class="space-y-12">
+                <header class="text-center space-y-4">
+                    <h2 class="serif text-4xl md:text-5xl font-bold text-gray-800">Pasar dan Tren Industri Perhotelan 2025</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                        Dinamika pasar yang membentuk masa depan industri perhotelan Indonesia
+                    </p>
+                </header>
+
+                <!-- Sustainability Trends -->
+                <div id="sustain-trend" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">3.1 Tren Keberlanjutan dan Regeneratif</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Moratorium Konstruksi di Bali</h4>
+                                <p class="text-gray-700 mb-4">
+                                    <a href="https://userguest.com/reinventing-paradise-how-indonesias-hotel-industry-is-transforming-in-2025/" class="citation-link" target="_blank">Pemerintah provinsi Bali memberlakukan moratorium pada konstruksi hotel</a>, vila, dan tempat hiburan baru di zona wisata utama.
+                                </p>
+                                <div class="flex items-center text-green-600">
+                                    <i class="fas fa-leaf mr-2"></i>
+                                    <span class="font-semibold">Inisiatif Green Hotel</span>
+                                </div>
+                            </div>
+
+                            <div class="stat-card rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Wisata Kesehatan (Wellness Tourism)</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Meningkatnya permintaan akan <strong>wellness tourism</strong> menciptakan peluang besar bagi hotel untuk mengembangkan fasilitas dan layanan kesehatan.
+                                </p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center text-purple-600">
+                                        <i class="fas fa-spa mr-2"></i>
+                                        <span>Spa &amp; Pusat Kebugaran</span>
+                                    </div>
+                                    <div class="flex items-center text-blue-600">
+                                        <i class="fas fa-brain mr-2"></i>
+                                        <span>Program Meditasi</span>
+                                    </div>
+                                    <div class="flex items-center text-green-600">
+                                        <i class="fas fa-apple-alt mr-2"></i>
+                                        <span>Menu Makanan Sehat</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <img src="https://kimi-web-img.moonshot.cn/img/www.cvent.com/a13e34fb6cc9435d95c58a7bc4ffd00a78ea588f.png" alt="Hotel dengan desain ramah lingkungan" class="w-full h-64 object-cover rounded-lg shadow-lg" referrerpolicy="no-referrer"/>
+
+                            <div class="pull-quote rounded-xl p-6">
+                                <p class="serif text-lg italic text-gray-800 mb-3">
+                                    "Hotel-hotel yang berinvestasi dalam teknologi ramah lingkungan tidak hanya mengurangi jejak ekologis mereka tetapi juga menarik segmen pasar yang semakin sadar akan isu lingkungan."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Digital Influence -->
+                <div id="digital" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">3.2 Pengaruh Digital dan Media Sosial</h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass-effect rounded-xl p-6">
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Long-Stay &amp; Co-working Spaces</h4>
+                            <p class="text-gray-700 mb-4">
+                                Meningkatnya jumlah <strong>digital nomads</strong> telah menciptakan permintaan signifikan untuk akomodasi yang mendukung gaya hidup mereka.
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-center text-blue-600">
+                                    <i class="fas fa-wifi mr-2"></i>
+                                    <span>Internet Cepat &amp; Andal</span>
+                                </div>
+                                <div class="flex items-center text-purple-600">
+                                    <i class="fas fa-laptop mr-2"></i>
+                                    <span>Ruang Kerja Nyaman</span>
+                                </div>
+                                <div class="flex items-center text-green-600">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Komunitas Dinamis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="glass-effect rounded-xl p-6">
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Platform Review &amp; Media Sosial</h4>
+                            <p class="text-gray-700 mb-4">
+                                Platform review online dan media sosial telah menjadi kekuatan utama dalam membentuk keputusan perjalanan wisatawan.
+                            </p>
+                            <div class="space-y-2">
+                                <div class="flex items-center text-green-600">
+                                    <i class="fas fa-star mr-2"></i>
+                                    <span>TripAdvisor</span>
+                                </div>
+                                <div class="flex items-center text-blue-600">
+                                    <i class="fas fa-map-marked-alt mr-2"></i>
+                                    <span>Google Maps Reviews</span>
+                                </div>
+                                <div class="flex items-center text-red-600">
+                                    <i class="fas fa-hotel mr-2"></i>
+                                    <span>Agoda &amp; Booking.com</span>
+                                </div>
+                                <div class="flex items-center text-pink-600">
+                                    <i class="fas fa-camera mr-2"></i>
+                                    <span>Instagram &amp; TikTok</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure Impact -->
+                <div id="infrastructure" class="space-y-8">
+                    <h3 class="serif text-3xl font-semibold text-gray-800">3.3 Dampak Pembangunan Infrastruktur</h3>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="stat-card rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Ibu Kota Nusantara (IKN)</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Pemindahan ibu kota negara dari Jakarta ke <strong>IKN di Kalimantan Timur</strong> merupakan proyek infrastruktur terbesar yang berpotensi mengubah lanskap industri perhotelan.
+                                </p>
+                                <div class="flex items-center text-blue-600">
+                                    <i class="fas fa-city mr-2"></i>
+                                    <span>Peluang Investasi Strategis</span>
+                                </div>
+                            </div>
+
+                            <div class="glass-effect rounded-xl p-6">
+                                <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Perluasan MRT Jakarta</h4>
+                                <p class="text-gray-700 mb-4">
+                                    Perluasan jaringan Mass Rapid Transit (MRT) terus meningkatkan konektivitas dan mengurangi kemacetan lalu lintas.
+                                </p>
+                                <div class="flex items-center text-green-600">
+                                    <i class="fas fa-subway mr-2"></i>
+                                    <span>Aksesibilitas Meningkat</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6">
+                            <img src="https://kimi-web-img.moonshot.cn/img/www.science.org/95e34d3566d2bf0642d6e2c82b0c683ad6cbb9b0.jpg" alt="Konsep Ibu Kota Nusantara kawasan pemerintahan" class="w-full h-64 object-cover rounded-lg shadow-lg" referrerpolicy="no-referrer"/>
+
+                            <div class="pull-quote rounded-xl p-6">
+                                <p class="serif text-lg italic text-gray-800 mb-3">
+                                    "Keberhasilan IKN sebagai pusat pemerintahan dan bisnis baru akan sangat bergantung pada ketersediaan akomodasi yang memadai, menjadikannya target investasi yang strategis."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Real Examples -->
+            <section id="examples" class="space-y-12">
+                <header class="text-center space-y-4">
+                    <h2 class="serif text-4xl md:text-5xl font-bold text-gray-800">Contoh Nyata: Dampak di Lapangan</h2>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                        Studi kasus konkret yang mengilustrasikan tantangan dan respons industri perhotelan Indonesia
+                    </p>
+                </header>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Case Study 1: Sulawesi Selatan -->
+                    <div class="space-y-8">
+                        <h3 class="serif text-2xl font-semibold text-gray-800">4.1 Studi Kasus: Sulawesi Selatan</h3>
+
+                        <div class="glass-effect rounded-xl p-6">
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Laporan IHRA: Penurunan Occupancy</h4>
+                            <p class="text-gray-700 mb-4">
+                                Menurut laporan dari <strong>Indonesian Hotel and Restaurant Association (IHRA)</strong>, tingkat hunian hotel rata-rata di Sulawesi Selatan mengalami anjlok yang tajam.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="stat-card rounded-lg p-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Q3 2024</span>
+                                        <span class="font-bold text-green-600 text-xl">60%</span>
+                                    </div>
+                                </div>
+                                <div class="stat-card rounded-lg p-4">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-700">Awal 2025</span>
+                                        <span class="font-bold text-red-600 text-xl">15-20%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-600 text-sm mt-4">
+                                <a href="https://www.ttgasia.com/2025/02/24/indonesian-hotels-in-pain/" class="citation-link" target="_blank">Sumber: TTG Asia</a>
+                            </p>
+                        </div>
+
+                        <div class="pull-quote rounded-xl p-6">
+                            <h4 class="serif text-lg font-semibold text-gray-800 mb-3">Dampak Ekonomi Wilayah Non-Java</h4>
+                            <p class="text-gray-700 mb-3">
+                                Penurunan drastis ini secara langsung dikaitkan dengan hilangnya bisnis dari segmen pemerintah dan BUMN, yang sebelumnya menjadi tulang punggung pendapatan.
+                            </p>
+                            <p class="text-gray-700">
+                                Fenomena serupa juga dilaporkan di <a href="https://www.ttgasia.com/2025/02/24/indonesian-hotels-in-pain/" class="citation-link" target="_blank">Lampung dan Sumatera Barat</a>, di mana beberapa hotel kehilangan hingga 60% okupansi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2: Bali Response -->
+                    <div class="space-y-8">
+                        <h3 class="serif text-2xl font-semibold text-gray-800">4.2 Studi Kasus: Tanggapan terhadap "No List 2025"</h3>
+
+                        <div class="glass-effect rounded-xl p-6">
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Upaya Peningkatan Praktik Keberlanjutan</h4>
+                            <p class="text-gray-700 mb-4">
+                                Pencantuman Bali dalam daftar <a href="https://en.tempo.co/read/1943066/bali-tops-fodors-2025-no-list-due-to-overtourism" class="citation-link" target="_blank">"No List 2025" oleh Fodor's menjadi momentum kebangkitan</a> bagi banyak hotel di pulau tersebut.
+                            </p>
+
+                            <div class="space-y-3">
+                                <div class="flex items-center text-green-600">
+                                    <i class="fas fa-recycle mr-2"></i>
+                                    <span>Reduksi Plastik Sekali Pakai</span>
+                                </div>
+                                <div class="flex items-center text-blue-600">
+                                    <i class="fas fa-leaf mr-2"></i>
+                                    <span>Program Daur Ulang Komprehensif</span>
+                                </div>
+                                <div class="flex items-center text-yellow-600">
+                                    <i class="fas fa-solar-panel mr-2"></i>
+                                    <span>Energi Terbarukan</span>
+                                </div>
+                                <div class="flex items-center text-purple-600">
+                                    <i class="fas fa-users mr-2"></i>
+                                    <span>Kolaborasi Komunitas Lokal</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card rounded-xl p-6">
+                            <h4 class="serif text-xl font-semibold text-gray-800 mb-4">Inisiatif Regeneratif</h4>
+                            <p class="text-gray-700 mb-4">
+                                Muncul inisiatif kolektif dari industri perhotelan dan pemerintah untuk mempromosikan <strong>pariwisata regeneratif</strong> di Bali.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="font-semibold text-gray-800 mb-2">Lingkungan</h5>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Penanaman pohon</li>
+                                        <li>• Restorasi terumbu karang</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-gray-800 mb-2">Sosial</h5>
+                                    <ul class="text-sm text-gray-700 space-y-1">
+                                        <li>• Pemberdayaan ekonomi</li>
+                                        <li>• Pelatihan keterampilan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Impact -->
+                <div class="space-y-8 mt-12">
+                    <div class="glass-effect rounded-xl p-8">
+                        <h3 class="serif text-2xl font-semibold text-gray-800 mb-6 text-center">Kesimpulan dari Studi Kasus</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-red-600 mb-3">Tantangan Nyata</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-red-500 mr-2 mt-1"></i>
+                                        <span>Penurunan okupansi hingga 15-20% di wilayah non-Java</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-red-500 mr-2 mt-1"></i>
+                                        <span>Ketergantungan berlebihan pada segmen pemerintah</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-red-500 mr-2 mt-1"></i>
+                                        <span>Dampak negatif dari peringatan Fodor's "No List"</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-green-600 mb-3">Respons Positif</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                        <span>Diversifikasi pasar dan segmen</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                        <span>Peningkatan praktik keberlanjutan</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
+                                        <span>Kolaborasi industri dan pemerintah</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final Summary -->
+            <section class="space-y-8">
+                <div class="hero-gradient rounded-2xl p-8 text-white text-center">
+                    <h2 class="serif text-3xl font-bold mb-4">Melihat ke Depan: Peluang dalam Krisis</h2>
+                    <p class="text-xl leading-relaxed max-w-4xl mx-auto">
+                        Meskipun tantangan yang dihadapi industri perhotelan Indonesia pada tahun 2025 tampak berat, di dalam setiap krisis terkandung peluang untuk transformasi. Dengan pendekatan strategis, inovasi berkelanjutan, dan kolaborasi yang erat antara semua pemangku kepentingan, industri perhotelan dapat tidak hanya bertahan tetapi juga bangkit lebih kuat dari sebelumnya.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center space-y-3">
+                        <div class="text-3xl text-blue-600">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="serif text-lg font-semibold text-gray-800">Inovasi</h3>
+                        <p class="text-gray-600">Menerapkan teknologi baru dan praktik berkelanjutan untuk meningkatkan daya saing</p>
+                    </div>
+
+                    <div class="text-center space-y-3">
+                        <div class="text-3xl text-green-600">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="serif text-lg font-semibold text-gray-800">Kolaborasi</h3>
+                        <p class="text-gray-600">Bekerja sama dengan pemerintah, komunitas, dan mitra strategis untuk bangkit bersama</p>
+                    </div>
+
+                    <div class="text-center space-y-3">
+                        <div class="text-3xl text-purple-600">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="serif text-lg font-semibold text-gray-800">Adaptasi</h3>
+                        <p class="text-gray-600">Mengubah tantangan menjadi peluang dengan fleksibilitas dan kecerdasan strategis</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
